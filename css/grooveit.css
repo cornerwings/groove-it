@@ -1,0 +1,123 @@
+/* Global reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body { 
+  line-height: 1.5; 
+}
+
+/* Remove annoying border on linked images. */
+a img {border: none;}
+
+/* Remove annoying border on links in Firefox */
+a:active, a:focus
+  {outline:0;}
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td {text-align: left; font-weight: normal; }
+table, td, th {vertical-align: middle;}
+
+/* Typography */
+@font-face {
+	font-family: 'URW Gothic L';
+	src: url('../fonts/urw_gothic_l_book.ttf');
+	src: local('☺'), url('TitilliumText22L001-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Layout */
+html, body
+  {background: #555; color: #cbd0d5; height:100%; width:100%; font-family: "URW Gothic L", serif;}
+
+h1, h2, h3, h4, h5, h6
+  {color: #262728;}
+
+#header{
+   width:100%; height:72px; margin-bottom:3em;
+}
+#header h1 {
+    position: absolute; top:48px; left:80px;
+     height: 76px;
+    overflow: hidden; font-size: 2em;
+}
+#header h4 {
+    position: absolute; top:100px; left:840px;
+    height: 32px; overflow: hidden; font-size: 0.8em;
+}
+#loading {
+  position: absolute; top: 200px; left: 150px;
+  width:100px; height: 100px;
+  background:url(../images/ajax-loader.gif) no-repeat;
+  z-index:2; overflow: hidden;
+}
+#tweet-container {
+  position: absolute; top: 200px; left: 150px;
+  z-index: 1; overflow: hidden;
+}
+#tweet {
+  width: 850px; height: 200px; display: block;
+  font-size: 1.5em; float: left; color: #999;
+}
+#tweet a {
+  text-decoration: none; font-size: 0.8em;
+}
+#circle {
+   background-color: #c06; height: 80px; width: 80px; float: left;
+   -moz-border-radius:40px; -webkit-border-radius: 40px;
+}
+#content
+  {margin:0 20px 0 80px; width:60em;}
+#mycanvas
+  {background:#333; position:relative; overflow:hidden;
+   width:60em; height:300px; margin:1.5em 0;border-radius:10px;}
+
+#content h2 { float: left; }
+#search { float: right;}
+#search input, #search button {
+  border: none; float: left;
+}
+#search input.box {
+  color: #333; font-size: 1.2em;
+  width: 250px; height: 30px; margin-right: 5px;
+  background: #616161; margin-top: -2px;
+  padding: 2px 8px;
+}
+#search input.box:focus { outline: none; }
+#search button.btn {
+  width: 30px; height: 30px; margin-top: -2px;
+  cursor: pointer; text-indent: -9999px;
+  background: url(../images/search_btn.png) no-repeat top right;
+}
+#footer {
+  position:relative; overflow:hidden;
+  margin:0 20px 0 80px; width:60em;
+  padding: 15px 5px 10px 5px; height: 50px;
+}
+#atrribution {
+  position:fixed; left:0px; bottom:0px;
+  height:30px; width:100%; font-size: 0.9em;
+  background: transparent; text-align: center;
+}
+.link{ 
+  text-decoration: none; color: #2db0d9; 
+}

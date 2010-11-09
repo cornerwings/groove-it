@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
+<head> 
+  <title>An Audio Experiment</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <style type="text/css" media="screen, projection"> 
+    @import url('css/grooveit.css');
+  </style> 
+  <script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+</head> 
+ 
+<body> 
+
+  <a href="http://github.com/sainathmallidi/groove-it">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub">
+  </a>
+
+  <div id="header">
+    <h1>Twitter + Music Synthesis = Headache</h1>
+    <h4 id="music-help">Please excuse the shitty music</h4>
+  </div>
+
+  <div id="tweet-container">
+    <div id="tweet"></div>
+  </div>
+
+  <div id="loading"></div>
+
+  <div id="content"> 
+    <canvas id="mycanvas">You clearly are living under a rock, Get yourself a new browser</canvas>
+    <h2 style="font-size: 1.2em; line-height: 30px;">* A lot of data is being wasted right now!!</h2>
+    <div id="search">
+	    <input type="text" class="box" /> 
+	    <button class="btn" title="Submit Search">Search</button>
+    </div> 
+  </div> 
+  
+  <div id="footer">
+    <!-- AddThis Button BEGIN -->
+    <div class="addthis_toolbox addthis_default_style">
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+      <a class="addthis_button_tweet"></a>
+      <a class="addthis_counter addthis_pill_style"></a>
+    </div>
+    <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=sainathmallidi"></script>
+    <!-- AddThis Button END -->
+  </div>
+
+  <div id="atrribution">
+    Made by <a class="link" href="http://www.cc.gatech.edu/~smallidi/">Sainath Mallidi</a>  Follow <a class="link" href="http://twitter.com/#!/sainathmallidi">@sainathmallidi</a>
+  </div>
+
+  <section id="loops">
+    <audio id="sound_0_0" preload="all">
+      <source src="music/drum-loop-1.mp3" type="audio/mpeg">
+      <source src="music/drum-loop-1.wav" type="audio/x-wav">
+      <source src="music/drum-loop-1.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_0_1" preload="all">
+      <source src="music/drum-loop-long.mp3" type="audio/mpeg">
+      <source src="music/drum-loop-long.wav" type="audio/x-wav">
+      <source src="music/drum-loop-long.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_0_2" preload="all">
+      <source src="music/drum-loop-2.mp3" type="audio/mpeg">
+      <source src="music/drum-loop-2.wav" type="audio/x-wav">
+      <source src="music/drum-loop-2.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_1_0" preload="all">
+      <source src="music/guitar-smooth-1.mp3" type="audio/mpeg">
+      <source src="music/guitar-smooth-1.wav" type="audio/x-wav">
+      <source src="music/guitar-smooth-1.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_1_1" preload="all">
+      <source src="music/guitar-smooth-2.mp3" type="audio/mpeg">
+      <source src="music/guitar-smooth-2.wav" type="audio/x-wav">
+      <source src="music/guitar-smooth-2.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_1_2" preload="all">
+      <source src="music/guitar-smooth-3.mp3" type="audio/mpeg">
+      <source src="music/guitar-smooth-3.wav" type="audio/x-wav">
+      <source src="music/guitar-smooth-3.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_1_3" preload="all">
+      <source src="music/guitar-smooth-4.mp3" type="audio/mpeg">
+      <source src="music/guitar-smooth-4.wav" type="audio/x-wav">
+      <source src="music/guitar-smooth-4.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_2_0" preload="all">
+      <source src="music/guitar-bass-1.mp3" type="audio/mpeg">
+      <source src="music/guitar-bass-1.wav" type="audio/x-wav">
+      <source src="music/guitar-bass-1.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_2_1" preload="all">
+      <source src="music/guitar-bass-2.mp3" type="audio/mpeg">
+      <source src="music/guitar-bass-2.wav" type="audio/x-wav">
+      <source src="music/guitar-bass-2.ogg" type="application/ogg">
+    </audio>
+
+    <audio id="sound_2_2" preload="all">
+      <source src="music/guitar-bass-3.mp3" type="audio/mpeg">
+      <source src="music/guitar-bass-3.wav" type="audio/x-wav">
+      <source src="music/guitar-bass-3.ogg" type="application/ogg">
+    </audio>
+
+  </section>
+
+  <script type="text/javascript" src="js/grooveit.js"></script>
+</body> 
+</html>
+
