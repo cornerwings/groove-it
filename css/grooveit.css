@@ -40,7 +40,7 @@ table, td, th {vertical-align: middle;}
 @font-face {
 	font-family: 'URW Gothic L';
 	src: url('../fonts/urw_gothic_l_book.ttf');
-	src: local('☺'), url('TitilliumText22L001-webfont.ttf') format('truetype');
+	src: local('☺'), url('../fonts/urw_gothic_l_book.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
